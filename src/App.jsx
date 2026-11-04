@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css'
 import Home from './Components/Home'
-import Product from './Components/product'
+// import Product from './Components/product'
 import User from './Components/User'
 import { myContext } from './Components/Context/Context'
 import { Foods } from './Components/Foods'

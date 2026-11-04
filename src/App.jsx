@@ -28,7 +28,7 @@ function App() {
      <myContext.Provider value={{food,setFood,wishlist,setWishlist,cart,setCart}}>
      <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="prd" element={<Product />}></Route>
+      {/* <Route path="prd" element={<Product />}></Route> */}
       <Route path='user' element={<User />}></Route>
       <Route path='wishlist' element={<Wishlist />}></Route>
       <Route path='cart' element={<Cart />}></Route>

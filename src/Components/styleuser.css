@@ -1,0 +1,742 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.user-navbar{
+    background-color:#FFF8F0;
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 80px;
+}
+.user-navbar h2{
+    color: #3B2416;
+    font-size: 33px;
+    
+}
+.logo{
+    margin-top: 10px;
+}
+.navs{
+    width: 25%;
+    margin-left: 200px;
+    margin-top: -20px;
+}
+
+.nav-icon{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 30px;
+    gap: 10px;
+}
+.nav-icon i{
+    color: black;
+}
+.navbar2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 85px;
+    background-color: rgb(175, 44, 44);
+  
+}
+.search-field input{
+    position: absolute;
+    height: 43px;
+    width: 25%;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+ .search-icon{
+    margin-left: 24%;
+    color: black;
+    margin-top: 25px;
+    z-index: 100;
+}
+.search-icon i{
+    color: black;
+}
+.food-menu{
+    height: 50px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(5,3fr);
+    margin-left: 30%;
+    margin-top: 10px;
+    /* padding: auto; */
+}
+.food-menu button{
+    height: 28px;
+    width:90%;
+    border: 2px;
+    margin-left: 10px;
+    gap: 10px;  
+    margin-top: 5px;
+    background-color:#FFF8F0;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;
+    color: #C89B3C;
+}
+.item:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.wal{
+    width: auto;
+}
+.wal img{
+    width: 100%;
+    height: 300px;
+    object-fit:fill;
+}
+
+/* cards  */
+.food-items{
+    margin-left: 60px;
+}
+
+.food-items h1{
+    margin-top: 80px;
+    margin-left: 35%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+.underline{
+    height: 2px;
+    width: 20%;
+    background-color: #C89B3C;
+    border-radius: 5px;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+.underline-s{
+    height: 2px;
+    width: 10%;
+    background-color: #C89B3C;
+    border-radius: 5px;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+.rating-card{
+    position: absolute;
+    display: flex;
+    margin-left:62%;
+    margin-top: -33px;
+    /* margin-top: -30px; */
+}
+.food-items p{
+    font-family:sans-serif;
+}
+
+.btno button{
+    position: absolute;
+    height: 40px;
+    width: 40%;
+    border-radius: 5px;
+    background-color:rgb(230, 101, 101) ;
+    margin-left: 50%;
+    margin-top: -30px;
+     font-weight: bold;
+
+}
+.btnord button{
+     position: absolute;
+    height: 40px;
+    width: 40%;
+    border-radius: 5px;
+    background-color:rgb(84, 220, 69) ;
+    margin-left: 50%;
+    margin-top: -30px;
+    font-weight: bold;
+}
+.removebtn{
+      position: absolute;
+    height: 40px;
+    width: 25%;
+    border-radius: 5px;
+    background-color:rgb(218, 221, 216) ;
+    margin-left: 18%;
+    margin-top: -30px; 
+    font-weight: bold;
+
+}
+.removebtn i{
+    color: black;
+    margin-left: 10px;
+}
+.cart i{
+    color: black;
+    font-weight: normal;
+}
+.wishlist i{
+    position: absolute;
+    color: black;
+    margin-left: 80%;
+    margin-top: -70%;
+}
+.offers{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(248, 245, 245);
+}
+.offers h1{
+    margin-left: 40%;
+       color: brown;
+
+    margin-top: 10px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.carousel-offer{
+    overflow: hidden;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.carousel-offer img{
+    height: 300px;
+    width: 100%;
+    object-fit:fill;
+    margin-top: 10px;
+    padding: 5px;
+    transform: 0.6s ease-in-out;
+    border-radius: 20px;
+}
+.carousel-dots{
+    display:flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: -25px;
+}
+.dot{
+    width:10px;
+    height:10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+
+/* hall booking */
+.book-form{
+    background-color:white;
+    height: 655px;
+    width: 510px;
+    border-radius: 10px;
+
+    
+}
+.book-form h4{
+    margin-top: 10px;
+    color: rgb(176, 61, 61);
+   margin-left: 30%;
+}
+.book-form h6{
+    margin-left: 15%;
+
+}
+.booking{
+    background-color:whitesmoke;
+    display: flex;
+    height: 700px;
+    /* width: 100%; */
+}
+.book1{
+    /* width: 60%; */
+    height: 600px;
+}
+.book1 h1{
+    margin-left: 50%;
+    color: #7e431e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5%;
+}
+.about{
+    width: 700px;
+    height: 500px;
+    margin-left: 30px;
+    /* background-color: #edb39a; */
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.about h3{
+    margin-left: 20px;
+    font-family: sans-serif;
+    /* font-weight: bold; */
+}
+.about h4{
+    margin-left: 20px;
+        color: rgb(246, 105, 105);
+
+}
+.about p{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.bkicon{
+    display: flex;
+    margin-top: -150px;
+    gap: 20px;
+    margin-left: 20px;
+}
+.bicon2{
+    padding: 10px 10px;
+    height: 150px;
+    width: 200px;
+    background-color: #ed8779;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.bicon2 h6, p{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+}
+.bicon2 i{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.book2{
+    height:600px;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 30px;
+    
+
+}
+form{
+    height: 530px;
+    width: 470px; 
+    /* background-color: #FFF8F0;  */
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 180px; */
+    margin-top: 40px;
+    position: relative;
+}
+
+form h3{
+    /* position: absolute; */
+    /* margin-top: 20px; */
+    /* margin-left: 33%; */
+    color: #C89B3C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form h5{
+    /* margin-left: 23%; */
+    font-size: small;
+    color: #3B2416;
+}
+.field{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+span{
+    color: rgb(158, 64, 64);
+    font-family: sans-serif;
+    font-size: 15px;
+}
+input,select,textarea{
+    height: 45px;
+    width: 100%; 
+    border-radius: 6px; 
+    border:2px solid rgb(182, 79, 79);
+    padding: 10px;
+  
+}
+input:focus{
+    border-color: #e1d6d6;
+    box-shadow: none;
+}
+select:focus{
+    border: 3px solid #e27a7f;
+    box-shadow: none;
+}
+.rdi{
+    display: flex;
+   gap: 10px;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.radio-btn{
+    height: 15px;
+    width: 15px;
+    gap: 5px;
+}
+.bookbtn{
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(163, 89, 52);;
+    color: white;
+    font-weight: bolder;
+}
+.gallary{
+    height: 500px;
+    width: 1000%;
+}
+.gals{
+    display: flex;
+}
+.gallary h2{
+    color: #3B2416;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.gals img{
+   height: 360px;
+    width: 370px;
+    border-radius: 10px;
+}
+.gals img:hover{
+    transform: scaleY(1.08);
+}
+.gal {
+   margin-left: 10px; 
+}
+
+/* register form  */
+
+.register{
+    /* position: relative; */
+    height: 750px;
+    width: 100%;
+    /* position: relative; */
+    background: linear-gradient(to bottom,#f3eee9 0%,#bf967c 30%,#9e8762 65%,#87664a 100%);
+
+
+}
+.form-box{
+    position: absolute;
+    height: 720px;
+    width: 550px;
+     margin-left: 35%;
+     background-color: whitesmoke;
+     font-family: georgia,serif;
+     
+
+}
+.form-logbox{
+    position: absolute;
+    margin-top: 80px;
+    height: 500px;
+    width: 550px;
+     margin-left: 35%;
+     background-color: whitesmoke;
+     font-family: georgia,serif;
+
+}
+
+.reg-head{
+    /* margin-top: 50px; */
+    padding: 10px;
+    background-color:rgb(163, 89, 52);
+}
+.reg-head h4{
+    color: #e1d6d6;
+     margin-left: 25%;
+}
+.register-form{
+   gap:10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.field{
+    position: relative;
+    margin-top: 15px;
+}
+.register-form p{
+    margin-left: 25%;
+    margin-top: -40px;
+}
+.error{
+    position: absolute;
+    font-size: 14px;
+    color: red;
+    margin-left: 40%;
+   
+}
+.link-sign{
+    text-decoration: none;
+}
+.ordlnk{
+    text-decoration: none;
+    color: black;
+}
+ #menu-checkbox{
+    display: none;
+   }
+        .menutoggle{
+            display: none;
+            cursor: pointer;
+            /* color: white; */
+        }
+
+/* resposive  */
+
+@media (max-width: 768px){
+
+    /* user  */
+     .menutoggle{
+            display: block;
+            font-size: 25px;
+            cursor: pointer;
+            color: rgb(16, 15, 15);
+            margin-top: 50px;
+            z-index: 1000;
+        }
+        .nav-linksh{
+            height: 200px;
+            width: 40px;
+            display: none;
+            flex-direction: column;
+            /* background-color: none; */
+            position: absolute;
+            top: 70px;
+            right:10px;
+            width: 200px;
+            position: none;
+            z-index: 1000;
+        }
+         .nav-links{
+            height: 200px;
+            width: 40px;
+            display: none;
+            flex-direction: column;
+            /* background-color: none; */
+            position: absolute;
+            top: 70px;
+            right:10px;
+            width: 200px;
+            position: none;
+            z-index: 1000;
+        }
+      
+        .navs ul li{
+            border-bottom: 2px solid rgb(20, 21, 20);
+            margin-left: -30px;
+            /* color: black; */
+        }
+        #menu-checkbox:checked+.menutoggle+.nav-linksh{
+            display: flex;
+        }
+        .food-items {
+            margin-top: 0px;
+            margin-bottom: 160px;
+        }
+
+    .nav-icon{
+       
+        /* margin-left: -280px; */
+    }
+    .nav-icon i{
+         font-size: 13px;
+    }
+    .search-field{
+        margin-left: -12px;
+    }
+    .food-menu{
+        margin-left: 10px;
+    }
+    .item{
+        /* height: 6px; */
+        width: 62px;
+        font-size: 10px;
+    }
+    .wal img{
+        width: fit-content;
+    }
+    .food-items h1{
+        font-size: 25px;
+        margin-left: 60px;
+    }
+    .offers h1{
+        margin-left: 150px;
+    }
+
+    .carousel-offer img{
+        /* padding: 20px; */
+        width: 450px;
+        height: 200px;
+        margin-right: 20px;
+    }
+    /* navbar  */
+    .user-navbar{
+        margin-left: 0px;
+        background-color: #dc9747;
+        gap: 20px;
+    }
+      .logo{
+       width: 280px;
+       }
+
+       .logo h2{
+        font-size: 18px;
+        /* font-weight: bold; */
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(48, 148, 48);
+       }
+       .logo span{
+        display: none;
+       }
+       .sp{
+        font-size: 10px;
+       }
+       /* .navs{
+        margin-left: 70px;
+       } */
+
+       /* register */
+     
+     
+
+    .register{
+        margin-bottom: 120px;
+    }
+    /* .user-navbar{
+       justify-content: space-between;
+       gap: 30px; 
+       
+    } */
+    /* .link{
+        margin-left: -130px;
+    } */
+    /* .user-navbar ul{
+        margin-left: -60px;
+    } */
+    .reg-head{
+       font-size: small;
+    }
+    .field{
+        font-size: small;
+        width: 300px;
+        height: 55px;
+    }
+     input{
+        width: 300px;
+        height: 30px;
+    }
+    .form-box{
+        height: 700px;
+        width: 400px;
+        margin-top: 30px;
+        margin-left:40px;
+       
+    }
+   
+    form{
+        padding: 10px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .bookbtn{
+        width: 90px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 80px;
+    }
+    .register-form p{
+        font-size: 13px;
+        margin-left: 50px;
+    }
+
+    /* login  */
+     .form-logbox{
+        height: 420px;
+        width: 400px;
+      
+        margin-top: 150px;
+        margin-left:40px;
+       
+    }
+
+    /* hall booking  */
+
+    .booking{
+        /* margin-top: 70px; */
+        flex-direction: column;
+    }
+    .book1{
+        margin-top: 70px;
+        height: 300px;
+        width: 350px;
+
+    }
+    .book1 .underline{
+        margin-top: 70px;
+    }
+    .about{
+        width: 390px;
+    }
+    .about h3{
+        font-size: 21px;
+        margin-left: 5px;
+
+    }
+     .about h4{
+          font-size: 16px;
+          margin-left: 5px;
+    }
+     .about p{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    .bkicon{
+       gap: 1px;
+       width: 430px;
+        /* margin-top: -30px; */
+
+    }
+    .bicon2{
+          height: 140px;
+          width: 300px;
+    }
+    .bicon2 h6{
+        font-size: small;
+        margin-left: 1px;
+    }
+     .bicon2 p{
+        font-size: 12px;
+        margin-left: 1px;
+    }
+
+    .book2{
+        margin-top: 70%;
+        margin-bottom: 50%;
+    }
+    .hallbook{
+        width: 400px;
+        border: 2px solid black;
+    }
+    .bookbtn{
+        margin-top: 50px;
+    }
+
+    .gallary{
+        margin-left: 40px;
+        margin-top:135%;
+        margin-bottom: 150%;
+    }
+    .gals{
+            flex-direction: column;
+          gap: 10px;
+    }
+    .gal img{
+        height: 250px;
+        width: 300px;
+    }
+}
